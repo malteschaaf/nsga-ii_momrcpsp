@@ -162,7 +162,7 @@ end
 # Argumente:
 #   MI: Die maximale Anzahl von Mitarbeitern, die für ein Chromosom zugelassen sind.
 #   AE: Die Anzahl der Aktivitäten, die in einem Chromosom enthalten sein sollen.
-#   d_info: Ein Vektor von Vektoren, der zusätzliche Informationen für die Initialisierung enthält.
+#   d_info: Ein Vektor von Vektoren, der die möglichen Mitarbeiterzahlen für jedes Arbeitselement enthält.
 #   K: Ein Vektor, der für jede Aktivität angibt ob ein Kollonenführer benötigt wird.
 #
 function init_chromosome(MI::Int, AE::Int, d_info::Vector{Vector{Int}}, K::Vector{Int})
@@ -199,10 +199,10 @@ end
 # Argumente:
 #   chrom: Das Chromosom, dessen Aktivitäten geplant werden
 #   V: Liste mit den Vorgängern der Aktivitäten
-#   D: Matrix mit der Dauer der Arbeitselemente in Abhängigkeit der eingesetzten Mitarbeiter
+#   D: Ein Vektor von Vektoren mit der Dauer der Arbeitselemente in Abhängigkeit der eingesetzten Mitarbeiter
 #   MI: Die maximale Anzahl von Mitarbeitern die eingesetzt werden können
 #   AE: Die Anzahl der Arbeitselemente
-#   Lag: Matrix mit den anteiligen Bearbeitungsfortschritten abhängiger Vorrangbeziehungen 
+#   Lag: Ein Vektor von Vektoren mit den anteiligen Bearbeitungsfortschritten abhängiger Vorrangbeziehungen 
 #
 function schedule_chromosome(
     chrom::Chromosome,

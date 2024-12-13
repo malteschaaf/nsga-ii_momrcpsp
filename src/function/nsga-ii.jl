@@ -27,7 +27,7 @@
 #   BEL: Ein Vektor von Vektoren, der die Belastung der Mitarbeiter für jede Aktivität und jeden Modus enthält.
 #   D: Ein Vektor von Vektoren, der die Ausführungszeiten für jede Aktivität und jeden Modus enthält.
 #   Periodenlänge: Die Länge einer Periode in Zeiteinheiten.
-#   Lag: Die Anzahl der Perioden, die ein Mitarbeiter nach der Ausführung einer Aktivität pausieren muss.
+#   Lag: Ein Vektor von Vektoren der die anteiligen Bearbeitungsfortschritte abhängiger Vorrangbeziehungen enthält
 #
 # Rückgabewert:
 #   Die letzte Population nach der angegebenen Anzahl von Generationen.
